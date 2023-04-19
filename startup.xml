@@ -1,0 +1,22 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- std-startup.xml -->
+  
+  <category>
+  
+    <pattern>LOAD AIML</pattern> 
+    <template>
+      <learn>./pattern/greeting.aiml</learn>
+      <learn>./pattern/character.aiml</learn>
+      <learn>./pattern/complain.aiml</learn>
+      <learn>./pattern/chat.aiml</learn>
+      <learn>./pattern/discuss.aiml</learn>
+      <learn>./pattern/learn.aiml</learn>
+      <learn>./pattern/simple.aiml</learn>
+      <learn>./pattern/travel.aiml</learn>
+      <learn>./pattern/emotion-unfold.aiml</learn>
+      <!--<learn>more_aiml.aiml</learn>-->
+    </template>
+  
+  </category>
+  
+</aiml>

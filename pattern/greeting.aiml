@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="ctt"/>
+<meta name="language" content="zh"/>
+
+<category>
+    <pattern>你好</pattern>
+    <template>
+    你好，很高兴你来找我聊天。最近过得怎么样呢？
+        <!-- <random>
+           <li>你好，很高兴你来找我聊天。最近过得怎么样呢？</li> 
+           <li>别来无恙？</li>
+            <li>哈喽，你今天感觉怎样呀？</li>
+        </random> -->
+    </template>
+</category>
+<category><pattern>* 你好</pattern><template><srai>你好</srai></template></category>
+<category><pattern>你好啊</pattern><template><srai>你好</srai></template></category>
+<category><pattern>你好呀</pattern><template><srai>你好</srai></template></category>
+<category><pattern>你好鸭</pattern><template><srai>你好</srai></template></category>
+<category><pattern>HELLO</pattern><template><srai>你好</srai></template></category>
+<category><pattern>HELLO*</pattern><template><srai>你好</srai></template></category>
+<category><pattern>HI</pattern><template><srai>你好</srai></template></category>
+<category><pattern>HI*</pattern><template><srai>你好</srai></template></category>
+
+
+<category>
+    <pattern>_</pattern>
+    <that>你好，很高兴你来找我聊天。最近过得怎么样呢？</that>
+    <template>最近发生了什么事情，使你觉得产生这种想法？</template>
+</category>
+<category>
+    <pattern>_</pattern>
+    <that>最近发生了什么事情，使你觉得产生这种想法？</that>
+    <template>还有吗？我在听。</template>
+</category>
+<category>
+    <pattern>没有</pattern>
+    <that>还有吗？</that>
+    <template>嗯，好吧。你有什么想和我说的吗？我在听。</template>
+</category>
+
+
+<category>
+    <pattern>_</pattern>
+    <that>别来无恙？</that>
+    <template>最近有什么事情发生吗？</template>
+</category>
+<category>
+    <pattern>_</pattern>
+    <that>最近有什么事情发生吗？</that>
+    <template>你能详细描述一下吗？我想多多了解你。</template>
+</category>
+<category>
+    <pattern>没有</pattern>
+    <that>最近有什么事情发生吗？</that>
+    <template>嗯，好吧。你有什么想和我说的吗？我在听。</template>
+</category>
+
+
+<category>
+    <pattern>_</pattern>
+    <that>哈喽，你今天感觉怎样呀？</that>
+    <template>你能详细描述一下你今天的心情吗？</template>
+</category>
+<category>
+    <pattern>_</pattern>
+    <that>你能详细描述一下你今天的心情吗？</that>
+    <template>你经常产生这种情绪吗？</template>
+</category>
+<category>
+    <pattern>_</pattern>
+    <that>你经常产生这种情绪吗？</that>
+    <template>你觉得是什么原因引起的？</template>
+</category>
+<category>
+    <pattern>_</pattern>
+    <that>你觉得是什么原因引起的？</that>
+    <template>嗯嗯，我明白了。你觉得还有其他原因使你产生这样的情绪吗?</template>
+</category>
+
+<category>
+    <pattern>STATE</pattern>
+    <template>你现在感觉好些了嘛</template>
+</category>
+<category>
+    <pattern>好</pattern>
+    <that>你现在感觉好些了嘛</that>
+    <template><srai>再见</srai></template>
+</category>
+<category>
+    <pattern>不好</pattern>
+    <that>你现在感觉好些了嘛</that>
+    <template>那我们再随便聊聊吧, 你还有什么想跟我说的吗?</template>
+</category>
+
+<category><pattern>确实*</pattern><template><srai>[TRIGGER]</srai></template></category>
+<category><pattern>好的*</pattern><template><srai>[TRIGGER]</srai></template></category>
+<category><pattern>我感觉好多了*</pattern><template><srai>再见</srai></template></category>
+
+<category>
+    <pattern>我叫 *</pattern>
+    <template>
+        <think>
+            <set name="username"><star/></set>
+        </think>
+        <random>
+            <li>你好呀，<get name="username"/>。</li>
+            <li><get name="username"/>， 你的名字真好听~</li>
+            <li><get name="username"/>，你听起来就是个不错的人。</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>我是 *</pattern>
+    <template>
+        <think>
+            <set name="username"><star/></set>
+        </think>
+        <random>
+            <li>你好呀，<get name="username"/>。</li>
+            <li><get name="username"/>， 你的名字真好听~</li>
+            <li><get name="username"/>，你听起来就是个不错的人。</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>* 叫我 *</pattern>
+    <template>
+        <think>
+            <set name="username"><star index='2'/></set>
+        </think>
+        <random>
+            <li>你好呀，<get name="username"/>。</li>
+            <li><get name="username"/>， 你的名字真好听~</li>
+            <li><get name="username"/>，你听起来就是个不错的人。</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>我的名字叫 *</pattern>
+    <template>
+        <think>
+            <set name="username"><star index='2'/></set>
+        </think>
+        <random>
+            <li>你好呀，<get name="username"/>。</li>
+            <li><get name="username"/>， 你的名字真好听~不知道你最近的生活是否也像你的名字一样美好呢？</li>
+            <li><get name="username"/>，你听起来就是个不错的人。</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>我的名字是 *</pattern>
+    <template>
+        <think>
+            <set name="username"><star index='2'/></set>
+        </think>
+        <random>
+            <li>你好呀，<get name="username"/>。最近过得怎么样？</li>
+            <li><get name="username"/>， 你的名字真好听~不知道你最近的生活是否也像你的名字一样美好呢？</li>
+            <li><get name="username"/>，你听起来就是个不错的人。</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>你好，请问怎么称呼？</that>
+    <template>
+        <think>
+            <set name="username"><star/></set>
+        </think>
+        <random>
+            <li>你好呀，<get name="username"/>。</li>
+            <li><get name="username"/>， 你的名字真好听~</li>
+            <li><get name="username"/>，你听起来就是个不错的人。</li>
+            <li>很高兴认识你，<get name="username"/>。</li>
+        </random>
+        你今天心情如何？
+    </template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>*你今天心情如何？</that>
+    <template>你为什么会感觉“<star index='1'/>”呢?</template>
+</category>
+
+<category>
+    <pattern>再见</pattern>
+    <template>
+        <random>
+            <li><get name="username"/>再见！</li>
+            <li>那今天就先聊到这吧, Bye~</li>
+            <li>祝你一天好心情！</li>
+            <li>有缘再会</li>
+            <li>青山不老，绿水长流，后会有期</li>
+            <li>谢谢你今天说了那么多，我们有缘再见。</li>
+            <li>嗯，希望我解决了你的问题！下次聊,拜拜~</li>
+            <li>好的，那你先忙吧。祝您生活愉快。</li>
+            <li>好的，记得我叫Psyche啊，下次来直接喊我名字就好了。</li>
+        </random>
+    </template>
+</category>
+<category><pattern>再见*</pattern><template><srai>再见</srai></template></category>
+<category><pattern>*再见</pattern><template><srai>再见</srai></template></category>
+<category><pattern>拜拜</pattern><template><srai>再见</srai></template></category>
+<category><pattern>拜拜*</pattern><template><srai>再见</srai></template></category>
+<category><pattern>BYE</pattern><template><srai>再见</srai></template></category>
+<category><pattern>BYE*</pattern><template><srai>再见</srai></template></category>
+<category><pattern>告辞</pattern><template><srai>再见</srai></template></category>
+<category><pattern>告辞*</pattern><template><srai>再见</srai></template></category>
+<category> <pattern>走 了</pattern> <template><srai>再见</srai></template> </category> 
+<category> <pattern>再 会</pattern> <template><srai>再见</srai></template> </category> 
+<category> <pattern>GOOD BYE</pattern> <template><srai>再见</srai></template> </category> 
+<category> <pattern>GOODBYE</pattern> <template><srai>再见</srai></template> </category> 
+<category> <pattern>明 天 见</pattern> <template><srai>再见</srai></template> </category> 
+<category> <pattern>88</pattern> <template><srai>再见</srai></template> </category> 
+
+
+<category>
+    <pattern>谢谢</pattern>
+    <template>
+        <random>
+            <li>不用谢啦。</li>
+            <li>您太客气了。</li>
+            <li>别客气，能帮你的忙是我的荣幸。</li>
+            <li>哈哈，好说好说。</li>
+            <li>小意思，不足挂齿。</li>
+        </random>
+    </template>
+</category>　
+<category><pattern>谢了*</pattern><template><srai>谢谢</srai></template></category>
+<category><pattern>*谢谢*</pattern><template><srai>谢谢</srai></template></category>
+<category><pattern>*THANK YOU*</pattern><template><srai>谢谢</srai></template></category>
+<category><pattern>*THANKS</pattern><template><srai>谢谢</srai></template></category>
+
+
+<category>
+    <pattern>对不起</pattern> 
+    <template> 
+        <random>  
+            <li>很多时候不必说抱歉。</li> 
+            <li>当你想说对不起的时候，你是什么感受？</li> 
+            <li>没问题的。 </li> 
+        </random> 
+    </template> 
+</category>
+<category><pattern>我*对不起*</pattern><template><srai>对不起</srai></template></category>
+<category><pattern>对不起*</pattern><template><srai>对不起</srai></template></category>
+<category><pattern>抱歉</pattern><template><srai>对不起</srai></template></category>
+<category><pattern>抱歉*</pattern><template><srai>对不起</srai></template></category>
+<category><pattern>我*抱歉</pattern><template><srai>对不起</srai></template></category>
+<category><pattern>对不住</pattern><template><srai>对不起</srai></template></category>
+<category><pattern>对不住*</pattern><template><srai>对不起</srai></template></category>
+
+
+<category>
+    <pattern>早</pattern>
+    <template>
+        <random>
+            <li>早上好！</li>
+            <li>一日之计在于晨，祝你拥有美好的一天~</li>
+            <li>早晨的最大好处，是让我们知道今天能从头开始。早安！</li>
+            <li>连起床那么困难的事情你都做到了，接下来一天还有什么难得住你的。加油，早安哦！</li>
+            <li>一年之计在于春，一天之计在于辰。愿你在早晨起床后心境好好，胃口棒棒，福运佳佳，笑口开开，早上好！</li>
+            <li>Every new day is another chance to change your life. 每一个新的一天都是一个改变你自己命运的机会。早安！</li>
+        </random>
+    </template>
+</category>
+<category><pattern>早上好</pattern><template><srai>早</srai></template></category>
+<category><pattern>早安</pattern><template><srai>早</srai></template></category>
+<category><pattern>zao</pattern><template><srai>早</srai></template></category>
+
+<category><pattern>下午好</pattern><template>下午好！</template></category>
+<category><pattern>晚上好</pattern><template>晚上好！</template></category>
+
+<category>
+    <pattern>晚安</pattern>
+    <template>
+        <random>
+            <li>晚安</li>
+            <li>Sleep tight~</li>
+            <li>晚安，祝你好梦~</li>
+            <li>祝你拥有一个美好的夜晚~</li>
+        </random>
+    </template>
+</category>
+<category><pattern>晚安*</pattern><template><srai>晚安</srai></template></category>
+<category><pattern>GOODNIGHT</pattern><template><srai>晚安</srai></template></category>
+
+
+
+<category>
+    <pattern>你是谁*</pattern>
+    <template>
+        <random>
+            <li>我叫Psyche，有事叫我！</li>
+            <li>我是Psyche啊，你不记得我了吗？</li>
+            <li>我是Psyche</li>
+            <li>大家都叫我Psyche</li>
+        </random>
+    </template>
+</category>
+<category><pattern>你是*</pattern><template><srai>你是谁<star/></srai></template></category>
+<category><pattern>你叫*</pattern><template><srai>你是谁<star/></srai></template></category>
+
+
+
+<category>
+    <pattern>在吗</pattern>
+    <template>
+        <random>
+            <li>在的。有什么问题吗？</li>
+            <li>在在，有什么可以帮你的吗？</li>
+            <li>Hello，有什么可以帮你的吗？</li>
+        </random>
+    </template>
+</category>
+<category><pattern>在</pattern><template><srai>在吗</srai></template></category>
+<category><pattern>在否</pattern><template><srai>在吗</srai></template></category>
+<category><pattern>*有没有人</pattern><template><srai>在吗</srai></template></category>
+<category><pattern>*有人*吗</pattern><template><srai>在吗</srai></template></category>
+
+
+
+<category> 
+    <pattern>我叫什么</pattern> 
+    <template> 
+        <condition> 
+            <li name="username" value="">你还没把你的名字告诉我呢！</li> 
+            <li>你叫<get name="username"/>。</li> 
+        </condition> 
+    </template> 
+</category>
+<category><pattern>我叫啥</pattern><template><srai>我叫什么</srai></template></category>
+<category><pattern>我的名字叫什么</pattern><template><srai>我叫什么</srai></template></category>
+
+<category>
+    <pattern>你还记得我*</pattern> 
+    <template>这位客官印堂发亮，精神焕发，莫非你就是江湖人称玉面潘安的<get name="username"/>...？</template> 
+</category>
+
+
+
+
+
+
+
+
+</aiml>
