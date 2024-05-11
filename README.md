@@ -15,22 +15,6 @@ Our basic environment configuations are as follows:
 - Python: 3.6.13
 - TensorFlow: 1.15.0
 
-## Code
-
-You can execute our code through the following steps:
-
-- Before running the code, please download data files from the following link: https://drive.google.com/file/d/1HgbnT_zFgbNZ9WvAs47q7EBbTlrlj9Um/view?usp=drive_link. Due to ethical considerations, the data files have been encrypted, requiring contact with 2111287@tongji.edu.cn to obtain the password.
-- Then, place the folders ``Code/data`` and ``Code/topic`` in the downloaded files into the ``FAQ`` directory of the codebase. 
-- Train the topic prediction model:
-  ```
-  cd ./topic
-  python train.py
-  ```
-- Run the counseling agent with the following command:
-  ```
-  python run.py
-  ```
-
 
 ## Dataset: cPsychQASet
 
@@ -49,3 +33,18 @@ Some of the Q&A pairs in cPsychQASet are shown in the table below:
 The entire dataset has been uploaded to Google Drive, and the link is https://drive.google.com/file/d/1HgbnT_zFgbNZ9WvAs47q7EBbTlrlj9Um/view?usp=drive_link. However, due to ethical considerations, the data files have been encrypted, requiring contact with 2111287@tongji.edu.cn to obtain the password. Please note that when inquiring, kindly provide your institution and purpose, ensuring that the dataset is used only for academic purposes.
 
 
+## Code
+
+You can execute our code through the following steps:
+
+- Before running the code, please download data files from the link mentioned above.
+- Then, place the folders ``Code/data`` and ``Code/topic`` in the downloaded files into the ``FAQ`` directory of the codebase. 
+- Train the topic prediction model:
+  ```
+  cd ./topic
+  python train.py
+  ```
+- Run the counseling agent with the following command:
+  ```
+  python run.py
+  ```
