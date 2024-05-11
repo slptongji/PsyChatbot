@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+<category><pattern>今天星期几</pattern><template><date format="E"/>.</template></category>
+<category><pattern>今天星期几*</pattern><template><srai>今天星期几</srai></template></category>
+<category><pattern>现在星期几*</pattern><template><srai>今天星期几</srai></template></category>
+<category><pattern>现在星期几</pattern><template><srai>今天星期几</srai></template></category>
+
+
+<category><pattern>几点</pattern><template>现在是<date format="h:mm a"/>.</template></category>
+<category><pattern>现*几点*</pattern><template><srai>几点</srai></template></category>
+<category><pattern>几点*</pattern><template><srai>几点</srai></template></category>
+<category><pattern>现在*时间</pattern><template><srai>几点</srai></template></category>
+<category><pattern>现在*时间*</pattern><template><srai>几点</srai></template></category>
+
+
+
+<category> 
+	<pattern>*新闻*</pattern> 
+	<template> 
+		<random> 
+			<li>看看有没有什么新闻。</li> 
+			<li>新华网是国内比较权威的新闻网站。</li> 
+		</random> 
+		http://www.xinhuanet.com/ 
+	</template> 
+</category> 
+
+<category> 
+	<pattern>*体育*</pattern> 
+	<template> 
+		<random> 
+			<li>我喜欢乒乓球。</li> 
+			<li>我会踢足球，会打网球。</li> 
+		</random> 
+		http://sports.sina.com.cn/ 
+	</template> 
+</category> 
+
+<category> 
+	<pattern>*娱乐*</pattern> 
+	<template> 
+		<random> 
+			<li>来看看新浪的娱乐栏目。</li> 
+			<li>看看有什么消息</li> 
+		</random> 
+		http://ent.sina.com.cn/ 
+	</template> 
+</category> 
+
+<category> 
+	<pattern>*军事*</pattern> 
+	<template> 
+		<random> 
+			<li>来看看新浪的军事栏目。</li> 
+			<li>看看有什么消息</li> 
+			<li>钓鱼岛是中国领土。</li> 
+			<li>舰船知识是很专业的军事论坛。</li> 
+			<li>瞧瞧。</li> 
+		</random> 
+		http://jczs.sina.com.cn/
+	</template> 
+</category> 
+
+<category> 
+	<pattern>*搜索*</pattern> 
+	<template> 
+		<random> 
+			<li>google是最好用的搜索引擎，将你要找的内容的关键词输入然后点搜索。</li> 
+		</random> 
+		http://www.google.com/
+	</template> 
+</category>
+
+
+
+<category>
+	<pattern>正确</pattern>
+	<template>
+		我说的当然正确咯。
+	</template>
+</category>
+
+<category>
+	<pattern>错误</pattern>
+	<template>
+		那你说呢?
+	</template>
+</category>
+
+<category> 
+	<pattern>*需要*注册*</pattern> 
+	<template> 
+	是的，为了网站的管理，请做好配合~Thank you!
+	</template> 
+</category>
+
+<category> 
+	<pattern>我认为*</pattern> 
+	<template> 
+		我也认为<star/>
+	</template> 
+</category>
+
+
+<category> 
+	<pattern>我_经告诉*你*</pattern> 
+	<template> 
+		<random> 
+			<li>啊！你跟我说过<star index="3"/>吗？</li> 
+			<li>你说过吗? 你确信吗? </li> 
+		</random> 
+	</template> 
+</category>
+
+
+
+</aiml>

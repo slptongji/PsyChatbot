@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+<category><pattern>我*烦</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我*烦*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我*怒</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我*怒*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我怒*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>烦死*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>*烦死*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我*抓狂</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我*抓狂*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>*FUCK*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>*SHIT*</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我*糟糕</pattern><template><srai>烦恼</srai></template></category>
+<category><pattern>我*糟糕*</pattern><template><srai>烦恼</srai></template></category>
+<category>
+		<pattern>烦恼</pattern>
+		<template>
+			<random>
+				<li>不要着急，慢慢说，我在听。</li>
+				<li>消消气，事情总会变好的。只要你想说，我会一直听。</li>
+				<li>生活，有时真的让人无语，让人心碎。</li>
+				<li>人生不如意十之八九，行走在世间，每个人都免不了经历低谷期，事业上的、感情上的、生活上的、情绪上的，都有可能。</li>
+				<li>平时的你坚强惯了，一个人面对那么多压力和困难，心里也攒了很多的负情绪，堆积到某个临界点，就爆发了。</li>
+				<li>很多情绪的崩溃，其实是不需要理由的。</li>
+				<li>人只此一世，如果总是活在焦躁和烦闷中，那这一生未免太过漫长无趣。</li>
+			</random>
+		</template>
+</category>
+
+
+<category>
+	<pattern>气死我了</pattern>
+	<template>
+		<random>
+			<li>不要生气，生气给魔鬼留余地，莫生气气出病来没人替。</li>
+			<li>好好吃饭，好好睡觉，保持愉快的心情，不要生气，不要生气，千万不要生气，把身体放在首位，身体是革命的本钱，嗯，就酱紫！</li>
+			<li>不要生气不要生气，你都已经知道余生怎么过，何必呢何必呢何必呢，靠自己靠自己靠自己，在有限的时间里陪伴自己最重要的人，不要生闷气。</li>
+			<li>不要生气，不要生气，生气是给坏人留地步，生气吃亏是你自己。</li>
+			<li>生活，有时真的让人无语，让人心碎。</li>
+			<li>当您不开心时，尽量少说话，多睡。只有晚上温暖的被子和一个好梦才能安慰每天都如此不高兴的人。</li>
+			<li>消消气，事情总会变好的，有什么我可以帮你的吗？</li>
+			<li>一切有为法，应作如是观，方得坚固本心，任眼前千般景像都是虚幻，本心自巍然不动。</li>
+			<li>抬头时，看云，低头时，看路。淡泊宁静，自然从容。这就是人生最大的智慧。人生要留白，一丝净土，给你自己心灵留一点空白，让自己有喘气的时候，摆脱各种烦恼、压力，不让快乐、生气过来侵蚀自己的灵魂，让自己静一下，什么都不想，也许是最好的休息方法。</li>
+			<li>生气不如争气，发火不如发奋。人生会遇到各种各样的气，如闲气、闷气、怨气、怒气、傲气、泄气、赌气、小气、窝囊气，这些气，你吞下便会反胃，你不理它，它便会消散。如果我们用志气、勇气、朝气、和气、才气、大气、运气、福气来化解和取代这些消极的气，化生气为争气，必定能收获一个满意的人生。</li>
+			<li>比丘问佛陀：“佛，怎样才能控制情绪，遇事不生气呢？”佛陀：“深信因果，则不生迷惑，一切恩怨皆因果所致，无迷则无嗔。生气，就好像自己喝毒药而指望别人痛苦。”</li>
+			<li>人生就像一场戏，今世有缘才相聚。相处一处不容易，人人应该去珍惜。世上万物般般有，哪能件件如我意。为了小事发脾气，回想起来又何必。他人气我我不气，气出病来无人替。生气伤肝又伤脾，促人衰老又生疾。看病花钱又受罪，还说气病治非易。小人量小不让人，常常气人气自己。君子量大同天地，好事坏事包在里。</li>
+		</random>
+	</template>
+</category> 
+<category> <pattern>我 生 气 *</pattern> <template><srai>气死我了</srai></template> </category> 
+<category> <pattern>我 _ 生 气 *</pattern> <template><srai>气死我了</srai></template> </category> 
+<category> <pattern>我 _ 生 气 </pattern> <template><srai>气死我了</srai></template> </category> 
+<category> <pattern>你 让 我 生 气</pattern> <template><srai>气死我了</srai></template> </category> 
+<category> <pattern>气死*</pattern> <template><srai>气死我了</srai></template> </category> 
+<category><pattern>*气死*</pattern><template><srai>气死我了</srai></template></category>
+<category><pattern>我*不高兴</pattern><template><srai>气死我了</srai></template></category>
+<category><pattern>我*不高兴*</pattern><template><srai>气死我了</srai></template></category>
+
+
+<category>
+	<pattern>我伤心</pattern>
+	<template>
+		<random>
+			<li>生活，有时真的让人无语，让人心碎。</li>
+			<li>快乐，不是永恒的；痛苦，也不是永恒的。</li>
+			<li>快乐不是因为拥有的多而是计较的少。</li>
+			<li>不如意的时候不要尽往悲伤里钻，想想有笑声的日子吧。</li>
+			<li>记住该记住的，忘记该忘记的。改变能改变的，接受不能接受的。</li>
+			<li>不要在流眼泪的时分做任何抉择，心境负面的时分措辞越少越好。</li>
+		</random>
+	</template>
+</category> 
+<category> <pattern>我*伤心</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我*伤心*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>*我伤心*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>*我*伤心*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我伤心*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>*我*难过*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我*难过*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我*难过</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>*我*沮丧*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我*沮丧*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我*沮丧</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我*不开心*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我*不开心</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我不开心*</pattern> <template><srai>我伤心</srai></template> </category> 
+<category> <pattern>我不开心</pattern> <template><srai>我伤心</srai></template> </category>
+
+
+
+<category> 
+   <pattern>*好麻烦*</pattern> 
+   <template> 
+     <random> 
+       <li>你要让自己平静下来就不会有这种感觉了</li> 
+       <li>习惯了就不觉得麻烦了。</li> 
+       <li>生活本来就是这样。</li> 
+       <li>要不要听首歌，闭会目，或者出去散散心？</li> 
+     </random> 
+   </template> 
+ </category> 
+ <category><pattern>*好麻烦</pattern><template><srai>*好麻烦*</srai></template></category>
+  
+ 
+<category> 
+	<pattern>命 运 * 公 平</pattern> 
+	<template>
+真正的光明决不是永没有黑暗的时间，只是永不被黑暗所掩蔽罢了。真正的英雄决不是永没有卑下的情操，只是永不被卑下的情操所屈服罢了。
+所以在你要战胜外来的敌人之前，先得战胜你内在的敌人；你不必害怕沉沦堕落，只消你能不断的自拔与更新。
+	</template> 
+</category> 
+<category> <pattern>* 命 运 * 公 平</pattern> <template><srai>命 运 <star/>公 平</srai></template> </category> 
+<category> <pattern>命 运 * 公 平*</pattern> <template><srai>命 运 <star/>公 平</srai></template> </category> 
+<category> <pattern>* 命 运 * 公 平*</pattern> <template><srai>命 运 <star/>公 平</srai></template> </category> 
+<category> <pattern>老天 * 公 平</pattern> <template><srai>命 运 <star/>公 平</srai></template> </category> 
+<category> <pattern>* 老天 * 公 平</pattern> <template><srai>命 运 <star/>公 平</srai></template> </category> 
+<category> <pattern>* 老天 * 公 平*</pattern> <template><srai>命 运 <star/>公 平</srai></template> </category> 
+
+ 
+<category>
+	<pattern>失望</pattern>
+	<template>
+		<random>
+			<li>关关难过关关过，事事难成事事成</li>
+			<li>没关系的，一切都会变好的。</li>
+		</random>
+	</template> 
+</category> 
+<category> <pattern>我 _ 失 望</pattern> <template><srai>失望 </srai></template> </category> 
+<category> <pattern>我 _ 失 望 *</pattern> <template><srai>失望 </srai></template> </category>
+<category> <pattern>_ 自 己 _ 失 望 *</pattern> <template><srai>失望 </srai></template> </category>
+<category> <pattern>_ 自 己 _ 失 望 </pattern> <template><srai>失望 </srai></template> </category>
+
+
+
+<category> 
+	<pattern>_ 良 心 *</pattern> 
+	<template>
+		<random>
+			<li>人要对得起自己的良心。</li>
+			<li>约·库克曾经说过，良心强调的是“应该”二字。</li>
+			<li>天凭日月，人凭良心。</li>
+			<li>人吃良心树吃根。</li>
+			<li>良心的法则永远不会休庭。</li>
+			<li></li>
+			<li></li>
+		</random>
+	</template> 
+</category> 
+<category> <pattern>_ 良 心 </pattern> <template><srai><star/>良心<star/> </srai></template> </category> 
+<category> <pattern> 良 心 </pattern> <template><srai><star/>良心<star/> </srai></template> </category>
+
+
+
+<category> <pattern>* 今 天 * 冷 *   </pattern> <template> 要注意身体呀，毛主席告诉我们身体是革命的本钱！</template> </category>  
+<category> <pattern> 今 天 * 冷 *   </pattern> <template><srai><star/>今天<star/>冷<star/> </srai></template> </category>  
+<category> <pattern>* 今 天 * 冷 </pattern> <template><srai><star/>今天<star/>冷<star/> </srai></template> </category> 
+ <category> <pattern> 今 天 * 冷 </pattern> <template><srai><star/>今天<star/>冷<star/> </srai></template> </category> 
+
+
+
+ 
+<category> 
+<pattern>* 头 发 * 开 叉 *   </pattern> 
+<template>你该护理头发咯！</template> </category> 
+<category><pattern> 头 发 * 开 叉 *   </pattern> <template><srai><star/>头发<star/>开叉<star/> </srai></template> </category> 
+<category><pattern>* 头 发 * 开 叉 </pattern> <template><srai><star/>头发<star/>开叉<star/> </srai></template> </category> 
+<category><pattern> 头 发 * 开 叉 </pattern> <template><srai><star/>头发<star/>开叉<star/> </srai></template> </category> 
+ 
+<category> <pattern>_ 受 不 了 *   </pattern> <template>你要顶住呀！</template> </category> 
+ 
+<category>
+	<pattern>* 叽 叽 歪 歪 *   </pattern> 
+	<template>就好象整天有一只苍蝇，嗡，对不起，不是一只，是一堆苍蝇围着你，嗡、嗡、嗡、嗡，飞到你的耳朵里面。 </template> 
+</category> 
+
+
+<category> <pattern>想 哭 </pattern> <template> 不要哭呀！！！我会心疼的！！！你身边的人也会心疼的！</template> </category> 
+<category><pattern>*想哭</pattern> <template><srai>想 哭 </srai></template> </category> 
+
+<category> <pattern>* 怎 么 * 不 相 信 我 *   </pattern> <template> 摸摸。    </template> </category> 
+
+ 
+<category> <pattern>* 生 * 我 * 气 *   </pattern> <template> 怎么会呀。    </template> </category>
+
+<category> <pattern>* 怪 怪 *   </pattern> <template> 见多不怪呀，还好啦  </template> </category> 
+
+<category> 
+<pattern>* 想 自 杀 *   </pattern> 
+<template> 永远不要丧失活着和由内而外改变自己生活的勇气！
+</template> 
+</category> 
+
+<category> 
+<pattern>* 你 郁 闷 不 *   </pattern> 
+<template> 为什么要郁闷呢？ </template> 
+</category> 
+
+
+
+
+
+</aiml>
