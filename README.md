@@ -1,6 +1,8 @@
 # PsyChatbot: A Psychological Counseling Agent Towards Depressed Chinense Population Based on Cognitive Behavioral Therapy
 
-This work has been submitted to _ACM Transactions on Asian and Low-Resource Language Information Processing_.
+This repository contains the source code and data for our TALLIP 2024 paper：
+
+T. Chen, Y. Shen, X. Chen, and L. Zhang, “[PsyChatbot: A Psychological Counseling Agent Towards Depressed Chinese Population Based on Cognitive Behavioural Therapy](https://dl.acm.org/doi/10.1145/3676962),” *ACM Transactions on Asian and Low-Resource Language Information Processing*, Jul. 2024, doi: 10.1145/3676962.
 
 ![The overall architecture of PsyChatbot](./arch.png)
 
